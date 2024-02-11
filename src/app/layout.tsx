@@ -16,7 +16,59 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+      <nav className="grid grid-cols-7 gap-3 px-3 w-full h-16 bg-purple-900">
+        <section>
+         logo
+        </section>
+        <a className="flex flex-wrap h-16 content-center" href="/desarrollo">
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Desarrollo
+          </label>
+        </a>
+        <a
+          className="font-russoOne flex flex-wrap h-16 content-center"
+          href="/sobre-mi"
+        >
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Sobre mí
+          </label>
+        </a>
+        <a
+          className="font-russoOne flex flex-wrap h-16 content-center"
+          href="/literatura"
+        >
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Literatura
+          </label>
+        </a>
+        <a
+          className="font-russoOne flex flex-wrap h-16 content-center"
+          href="/visual"
+        >
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Visual
+          </label>
+        </a>
+        <a
+          className="font-russoOne flex flex-wrap h-16 content-center"
+          href="/random"
+        >
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Random
+          </label>
+        </a>
+        <a
+          className="font-russoOne flex flex-wrap h-16 content-center"
+          href="/"
+        >
+          <label className="flex font-russoOne border border-black rounded-md p-1 min-w-full justify-center bg-gray-900 text-purple-800 hover:bg-purple-800 hover:text-white">
+            Home
+          </label>
+        </a>
+      </nav>
+      {children}</body>
     </html>
   );
 }
